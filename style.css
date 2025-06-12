@@ -1,0 +1,77 @@
+/* Variáveis e paleta de cores neutras */
+:root {
+  --primary-color: #0d6efd;
+  --bg-light: #f8f9fa;
+  --bg-dark: #e9ecef;
+  --text-dark: #212529;
+  --text-muted: #6c757d;
+  --accent-color: #adb5bd;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  background-color: white;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: var(--primary-color) !important;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+.img-placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+}
+.poha{
+  width: 300px;
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+footer {
+  background-color: var(--bg-light);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .img-placeholder {
+    height: 150px;
+    font-size: 1rem;
+  }
+}
